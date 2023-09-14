@@ -1,0 +1,23 @@
+[package]
+name = "http-example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.6.20"
+reqwest = "0.11"
+serde = "1.0.188"
+tokio = { version = "1", features = ["full"] }
+tracing-subscriber = "0.3.17"
+
+volo-gen = { path = "../volo-example/volo-gen" }
+volo-example = { path = "../volo-example" }
+tracing = "0.1.37"
+once_cell = "1.18.0"
+lazy_static = "1.4.0"
+faststr = "0.2.11"
+axum-macros = "0.3.8"
+
+openssl = {version = "0.10", features = ["vendored"]}
